@@ -105,10 +105,10 @@ body {
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar img {
-    width: 100%;
     position: relative;
+    width: 180px;
+    height: 180px;
     border-radius: 50%;
-    
 }
 
 .seccion-perfil-usuario .perfil-usuario-avatar .boton-avatar {

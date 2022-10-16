@@ -31,17 +31,13 @@
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .2);
   }
    
-   .contrato{
-    flex: 1;
-  }
-   
-
    
   .contrato{
-    background-image: linear-gradient(to bottom right, #F93939, #F5B5B5);
+    background-image: linear-gradient(to bottom right, rgb(250, 57, 57), #f74a4a);
     padding: 40px;
     text-align: center;
     position: relative;
+    flex: 1;
   }
    
   .contrato h2{

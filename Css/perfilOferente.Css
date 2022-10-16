@@ -255,3 +255,63 @@ footer{
     font-weight: 500;
     font-size: 22px;
 }
+.content-descrip p{
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+.descripcion{
+    display: flex;
+    justify-content: center;
+}
+.content-descrip{
+    margin-bottom: 1.25rem;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 0 12px rgb(0 0 0 / 20%);
+    background-color: #fff;
+    border-radius: 15px;
+    width: 80%;
+}
+.content-boton a{
+    display: block;
+    width: 13%;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(220, 53, 69);
+    border-radius: 10px;
+    padding: 10px 8px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+/* CSS DEL MODAL */
+  input[type="radio"] {
+    display: none;
+  }
+  
+  label {
+    color: grey;
+  }
+  
+  .clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+  }
+  
+  label:hover,
+  label:hover ~ label {
+    color: orange;
+    
+  }
+  
+  input[type="radio"]:checked ~ label {
+    color: orange;
+  }
+  .modal-header h1{
+    font-size: 20px;
+    font-weight: 500;
+  }
+   

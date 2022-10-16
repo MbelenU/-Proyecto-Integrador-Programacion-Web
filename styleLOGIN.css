@@ -133,7 +133,28 @@
     border-style: none;
     color: #fff;
   }
-
+  
+  .register button{
+    width: 90%;
+    margin: 9px 0px;
+    padding: 9px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+    position: relative;
+    background: #B61C1C;
+    border-style: none;
+    color: #fff;
+    font-size: 15px;
+  }
+  .register img{
+    width: 13px;
+  }
+  .register p{
+    font-size: 15px;
+    color: #797979;
+    text-align: center;
+    left: 15%;
+  }
 
   .login .submit{
     
