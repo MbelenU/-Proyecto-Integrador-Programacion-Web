@@ -17,7 +17,7 @@ body{
 
 header{
     height: 100vh;
-    background-image:linear-gradient(to top,rgba(250, 1, 1, 0.199) 0%, rgba(223, 126, 126, 0.329) 100%), url(../-Proyecto-Integrador-Programacion-Web/imgPrincipal.jpg);
+    background-image:linear-gradient(to top,rgba(250, 1, 1, 0.199) 0%, rgba(223, 126, 126, 0.329) 100%), url(../img-app/imgPrincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
     background-attachment: fixed;

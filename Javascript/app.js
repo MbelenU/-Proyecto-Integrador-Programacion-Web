@@ -1,5 +1,13 @@
-const formulario=document.getElementById("formulario");
+const boxPrincipal = document.querySelector('.principal');
+const menu = document.querySelector('.menu-navegacion');
 
-formulario.addEventListener("click",(e)=>{
-    e.preventDefault;
+boxPrincipal.addEventListener('click',()=>{
+    menu.classList.toggle('spread');
 })
+
+window.addEventListener('click', e=>{
+    if(menu.classList.contains('spread') && e.target!=menu && e.target!=boxPrincipal){
+        menu.classList.toggle('spread');
+    }
+})
+
