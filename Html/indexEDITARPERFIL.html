@@ -37,53 +37,26 @@
                 <div class="tab-content">
                     <div class="tab-pane active" id="home">
                         <hr>
-                        <form class="form" action="##" method="post" id="registrationForm">
-                            <div class="form-group">
-
-                                <div class="col-xs-6">
-                                    <label for="nombre">
-                                        <h4>Nombre</h4>
-                                    </label>
-                                    <input type="text" class="form-control" name="nombre" id="nombre"
-                                        placeholder="nombre">
-                                </div>
-                            </div>
-                            <div class="form-group">
-
-                                <div class="col-xs-6">
-                                    <label for="last_name">
-                                        <h4>Apellidos</h4>
-                                    </label>
-                                    <input type="text" class="form-control" name="apellidos" id="apellidos"
-                                        placeholder="apellidos">
-                                </div>
-                            </div>
-
+                        <form class="form" action="##" method="post" id="myform">
+                           
+                                
                             <div class="form-group">
 
                                 <div class="col-xs-6">
                                     <label for="teléfono">
-                                        <h4>Teléfono</h4>
+                                        <h4>Teléfono / Celular</h4>
                                     </label>
                                     <input type="text" class="form-control" name="teléfono" id="teléfono"
                                         placeholder="teléfono">
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <div class="col-xs-6">
-                                    <label for="mobile">
-                                        <h4>Celular</h4>
-                                    </label>
-                                    <input type="text" class="form-control" name="movil" id="movil"
-                                        placeholder="telefono móvil">
-                                </div>
-                            </div>
+                        
                             <div class="form-group">
 
                                 <div class="col-xs-6">
                                     <label for="email">
-                                        <h4>Email</h4>
+                                        <h4>Email Alternativo</h4>
                                     </label>
                                     <input type="email" class="form-control" name="email" id="email"
                                         placeholder="you@email.com">
@@ -92,10 +65,19 @@
                             <div class="form-group">
 
                                 <div class="col-xs-6">
-                                    <label for="ciudad">
-                                        <h4>Ciudad</h4>
+                                    <label for="localidad">
+                                        <h4>Localidad</h4>
                                     </label>
-                                    <input type="text" class="form-control" id="ciudad" placeholder="ciudad">
+                                    <input type="text" class="form-control" id="localidad" placeholder="localidad" >
+                                </div>
+                            </div>
+                            <div class="form-group">
+
+                                <div class="col-xs-6">
+                                    <label for="provincia">
+                                        <h4>Provincia</h4>
+                                    </label>
+                                    <input type="text" class="form-control" id="provincia" placeholder="provincia" >
                                 </div>
                             </div>
                             <div class="form-group">
@@ -104,9 +86,12 @@
                                     <label for="password">
                                         <h4>Contraseña</h4>
                                     </label>
-                                    <input type="password" class="form-control" name="password" id="password"
-                                        placeholder="contraseña">
-                                </div>
+                                    <input type="password" class="form-control" name="password" id="password" 
+                                    placeholder="Contraseña" pattern="(?=.*\d)(?=.*[a-záéíóúüñ]).*[A-ZÁÉÍÓÚÜÑ].*"
+                                    title="Debe tener al menos una mayúscula, una minúscula y un numero"
+                                    required>
+                             
+                                 </div>
                             </div>
                             <div class="form-group">
 
@@ -115,13 +100,14 @@
                                         <h4>Verifica la contraseña</h4>
                                     </label>
                                     <input type="password" class="form-control" name="password2" id="password2"
-                                        placeholder="password2">
+                                        placeholder="Contraseña" required>
                                 </div>
                             </div>
+                            <div id="resultado"></div>
                             <div class="form-group">
                                 <div class="col-xs-12">
                                     <br>
-                                    <button class="btn btn-success" type="submit"><i
+                                    <button class="btn btn-success" type="submit" onclick="validarContraseña()"><i
                                             class="glyphicon glyphicon-ok-sign"></i> Guardar</button>
                                     <button class="btn btn-danger" type="reset"><i
                                             class="glyphicon glyphicon-repeat"></i> Limpiar</button>
