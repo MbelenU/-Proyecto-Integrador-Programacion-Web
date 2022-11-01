@@ -28,7 +28,7 @@
            <div class="contrato">
              <h2>CONTRATO</h2>
              <div class="contrato-items">
-               <form action="">
+               <form action="" id="myform">
                 <table class="table">
                     <thead>
                       <tr>
@@ -49,7 +49,7 @@
                         <td>1121212143</td>
                         <td>Gasista</td>
                         <td>07/10/2022</td>
-                        <td>27/10/2022</td>
+                        <td id="fechaFin">27/11/2022</td>
                         <td>$25000</td>
                         <td>Aceptado</td>
                       </tr>
@@ -58,7 +58,7 @@
                <input type="submit" class="submit" value="ACEPTAR">
                <input type="submit" class="submit" value="RECHAZAR">
                <input type="submit" class="submit" value="CANCELAR">
-               <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Dejar puntuación</button>
+               <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" id="puntuacion" disabled>Dejar puntuación</button>
                <button type="button" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal2" data-bs-whatever="@mdo">Denunciar usuario</button>
                
                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

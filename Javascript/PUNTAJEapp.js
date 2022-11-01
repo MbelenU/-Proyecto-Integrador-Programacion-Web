@@ -19,28 +19,39 @@ exampleModal.addEventListener('show.bs.modal', event => {
 
 
 
-// $(document).ready(function () {
-//   var readURL = function (input) {
-//     if (input.files && input.files[0]) {
-//       var reader = new FileReader();
 
-//       reader.onload = function (e) {
-//         $('.avatar').attr('src', e.target.result);
-//       }
+function validarForm(event) {
+  event.preventDefault();
 
-//       reader.readAsDataURL(input.files[0]);
-//     }
-//   }
+    let punt = document.getElementById('puntuacion');
+    let fecha = document.querySelector("#fechaFin").value;
+    let today = getDate();
+   //Validaciones realizadas
+   validarPuntuacion(punt,fecha,today);
 
-//   $(".file-upload").on('change', function () {
-//     readURL(this);
-//   });
-// });
+   this.reset();
+}
+//si fecha es distinto de vacio, y el boton hacerlo en css
+//tambien validar que no se pueda puntuar mas de una vez
 
+function validarPuntuacion(punt,fecha,today); {
 
-// const button = document.querySelectorAll('btn btn-primary')
+    if(fecha >= today ){
+      punt.removeAttribute('disabled');
+          } else {
+      punt.setAttribute('disabled', "true");
+    }
+  
+  
+}
 
-// if ()
-// button.disabled = true
+function inicio() {
+  // Configuro el comportamiento del botón submit del formulario
+  let elForm = document.getElementById("myform");
+  elForm.addEventListener("submit", validarForm);
 
+  
+}
 
+// Cuando se termina de cargar la página ejecuta esto.
+window.onload = inicio;
