@@ -9,7 +9,7 @@ body{
 header{
     width: 100%;
     height: 410px;  
-    background-image: linear-gradient(120deg, rgba(230, 21, 31, 0.199) 0%, rgba(245, 87, 108, 0.199) 100%),url(../img-oferente/portada-electricista.jpg);
+    background-image: linear-gradient(120deg, rgba(230, 21, 31, 0.199) 0%, rgba(245, 87, 108, 0.199) 100%),url(/images/img-oferente/portada-electricista.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
